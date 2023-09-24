@@ -1,0 +1,102 @@
+html,body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: #E9EDC9;
+    color: #5F7161;
+}
+
+@keyframes flash {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.flash-animation {
+    animation: flash 2s ;
+    animation-iteration-count: 3;
+    margin-bottom: 50px;
+}
+.icon{
+    width: 4rem;
+    display: block;
+}
+@media (min-width:768px){
+    html{
+        font-size:1.2rem;
+    }
+}
+#slogan{
+    text-align: center;
+}
+
+/* Add this CSS code to your existing styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#CCD5AE; /* Semi-transparent background */
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 9999; /* Ensure it's on top of other content */
+    
+}
+.btn{
+    border:none;
+    padding:10px 20px;
+    background-color: #FEFAE0;
+    color:#5F7161;
+    border-radius: 20px;
+    opacity: 0.8;
+    
+}
+#confirm,input{
+    font-size: 1.5rem;
+    opacity: 0.8;
+    border-radius: 40px;
+    padding:5px 40px;
+    background-color: #FEFAE0;
+    color:#5F7161;
+    border:none;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#confirm {
+    margin: 0 auto; /* Center horizontally */
+    border: none; /* Remove the default border */
+    background-color: transparent; /* Set background to transparent */
+    padding: 10px 20px;
+    position: relative; /* Required for the pseudo-element */
+    z-index: 1; /* Ensure button is above the pseudo-element */
+    color: #FEFAE0;
+    margin: 0 auto; /* Center horizontally */
+    animation: shining 2s infinite;
+    font-size: 1.2rem;
+}
+
+@keyframes shining {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+.pic{
+    position: absolute;
+    bottom:0;
+    left: auto;
+    right:auto;
+
+    width: 3rem;
+    /* justify-content:end;
+    align-items:end;
+    text-align: end; */
+}
+
